@@ -22,6 +22,13 @@ def about():
     page="About"
   )
 
+@app.route('/projects')
+def projects():
+  return render_template(
+    "projects.html",
+    page="Projects"
+  )
+
 @app.route(f"/{route}")
 def secret_page():
   return render_template(
