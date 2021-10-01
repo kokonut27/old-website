@@ -32,7 +32,8 @@ def projects():
 @app.route(f"/{route}")
 def secret_page():
   return render_template(
-    "")
+    "secret_page.html",
+    page="Secret Page")
 
 @app.errorhandler(404)
 def not_found(e):
