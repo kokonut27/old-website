@@ -1,25 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>JBloves27 - {{page}}</title>
-    <!--<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.jpg') }}">-->
-    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet"/>
-  </head>
-  <body>
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
-    <a href="{{ url_for('index') }}">
-      <h1>JBloves27</h1>
-    </a>
+{% extends "base.html" %}
+{% block content %}
 
-    <a href="{{ url_for('about') }}">
-      About
-    </a><a href="{{ url_for('projects') }}">Project</a>
-    <br>
-    <br>
+<h1>Whoops! This page doesn't exist!</h1>
+<p>Please go back to the main page to go back</p>
 
-  <h1>Whoops! This page doesn't exist!</h1>
-  <p>Please go back to the main page to go back</p>
-  </body>
-</html>
+{% endblock %}

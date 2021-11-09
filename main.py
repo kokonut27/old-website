@@ -1,44 +1,26 @@
-import json
+from flask import Flask, render_template, flash, request, session, redirect, url_for, send_from_directory
 import os
-from flask import *
+import json
 
 app = Flask(__name__,
             static_url_path='', 
             static_folder='static',
             template_folder='templates')
 
-route = os.environ["secret"]
-
 @app.route('/')
 def index():
-  return render_template(
-    "index.html",
-    page="Home")# make page differnt for every page, use base page and append from there.
+  return render_template("index.html")
 
 @app.route('/about')
 def about():
-  return render_template(
-    "about.html",
-    page="About"
-  )
+  return render_template("about.html")
 
 @app.route('/projects')
 def projects():
-  return render_template(
-    "projects.html",
-    page="Projects"
-  )
-
-@app.route(f"/{route}")
-def secret_page():
-  return render_template(
-    "secret_page.html",
-    page="Secret Page")
+  return render_template("projects.html")
 
 @app.errorhandler(404)
 def not_found(e):
-  return render_template(
-    "404.html",
-    page="404 Error")
+  return render_template("404.html")
 
 app.run(host="0.0.0.0", port=8080)

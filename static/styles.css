@@ -1,16 +1,30 @@
-* {
-  margin: 0;
-// font-family: Arial, Helvetica, sans-serif
+body {
+  text-align: center;
+}
+
+h1.title {
+  float: left;
+  text-indent: 15px;
 }
 
 a {
-  color: lightskyblue
+  text-decoration: none;
+  color: #0069c4;
+  opacity: 0.7;
+  transition: 0.7s;
 }
 
 a:hover {
-  color: lightskyblue
+  opacity: 1;
+  color: #0088ff;
 }
 
-a:visited {
-  color: lightskyblue
+#navbar {
+  border: 2px solid #333;
+  padding: 15px;
+  border-radius: 15px;
+  width: 10%;
+  height: 10%;
+  margin: auto;
+  display: inline-block;
 }
