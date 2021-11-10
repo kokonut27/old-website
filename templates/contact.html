@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+  img {
+    border-radius: 15px;
+    padding: 10px;
+  }
+</style>
+
+<h2> Contact me! </h2>
+
+<a href="https://github.com/JBYT27/" target="_blank">
+  <img src="{{ url_for('static', filename='github.png') }}" width="50" height="50"/>
+</a>
+
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=beol0127%40gmail.com&authuser=0" target="_blank">
+  <img src="{{ url_for('static', filename='gmail.png') }}" width="70" height="50"/>
+</a>
+
+<a href="https://replit.com/@JBloves27" target="_blank">
+  <img src="{{ url_for('static', filename='replit.png') }}" width="50" height="50"/>
+</a>
+
+{% endblock %}

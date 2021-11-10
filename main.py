@@ -19,6 +19,10 @@ def about():
 def projects():
   return render_template("projects.html")
 
+@app.route('/contact')
+def contact():
+  return render_template("contact.html")
+
 @app.errorhandler(404)
 def not_found(e):
   return render_template("404.html")
