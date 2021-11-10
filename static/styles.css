@@ -54,3 +54,7 @@ a:hover {
 #projectsright:hover {
   box-shadow: 10px 10px 20px 0px #d3dde3;
 }
+
+.footer {
+  bottom: 0;
+}
