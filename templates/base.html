@@ -4,17 +4,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>JBloves27</title>
-    <!--<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.jpg') }}">-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='pfp.jpg') }}">
     <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet"/>
+    <style>
+      img {
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+    </style>
   </head>
   <body>
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
-    <a href="/"><h1>JBloves27</h1></a>
+    <a href="/">
+      <img src="{{ url_for('static', filename='pfp.jpg') }}" height="50" width="50"/>
+      <h1 style="display: inline">JBloves27</h1>
+    </a>
+
+    <br><br><br>
 
     <a href="{{ url_for('about') }}"><div id="navbar">About Me</div></a>
     <a href="{{ url_for('projects') }}"><div id="navbar">Projects</div></a>
-    <br>
+    <br><br>
 
     {% block content %}{% endblock %}
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
   </body>
 </html>

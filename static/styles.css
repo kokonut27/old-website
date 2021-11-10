@@ -1,5 +1,7 @@
 body {
   text-align: center;
+  background-color: #333;
+  color: #d3dde3;
 }
 
 h1.title {
@@ -10,7 +12,7 @@ h1.title {
 a {
   text-decoration: none;
   color: #0069c4;
-  opacity: 0.7;
+  opacity: 0.85;
   transition: 0.7s;
 }
 
@@ -20,11 +22,37 @@ a:hover {
 }
 
 #navbar {
-  border: 2px solid #333;
-  padding: 15px;
+  padding: 20px;
   border-radius: 15px;
   width: 10%;
   height: 10%;
   margin: auto;
+  display: inline;
+  background-color: white;
+}
+
+#projectsleft {
+  border-radius: 17px;
+  padding: 10px;
   display: inline-block;
+  margin-left: auto;
+  background-color: white;
+  transition: 0.7s;
+}
+
+#projectsright {
+  border-radius: 17px;
+  padding: 10px;
+  display: inline-block;
+  margin-right: auto;
+  background-color: white;
+  transition: 0.7s;
+}
+
+#projectsleft:hover {
+  box-shadow: 10px 10px 20px 0px #d3dde3;
+}
+
+#projectsright:hover {
+  box-shadow: 10px 10px 20px 0px #d3dde3;
 }

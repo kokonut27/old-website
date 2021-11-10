@@ -2,6 +2,65 @@
 
 {% block content %}
 
+<style>
+  h3 {
+    display: inline;
+  }
 
+  img {
+    vertical-align: middle;
+    /* border-radius: 50% */
+  }
+</style>
 
+<h2> Projects </h2>
+
+<a target="_blank" href="https://github.com/JBYT27/GitAPI">
+  <div style="" id="projectsleft">
+    <h3> git_api </h3>
+    <img src="{{ url_for('static', filename='gitapi.png') }}" width="70" height="50"/>
+    <br>
+    <p> git_api is a Python package that
+    <br>
+    retrieves GitHub json data to Python.
+    <br>
+    The data includes user data, repo data,
+    <br>
+    and more! </p>
+  </div>
+</a>
+
+<a target="_blank" href="https://github-user-search.jbloves27.repl.co">
+  <div id="projectsright">
+    <h3> GitHub User Search </h3>
+    <img src="{{ url_for('static', filename='gitapi.png') }}" width="70" height="50"/>
+    <br>
+    <p> GitHub User Search is a website
+    <br>
+    that retrieves GitHub data through
+    <br>
+    Flask. It shows GitHub avatar's, 
+    <br>
+    nicknames, usernames, and more!! </p>
+  </div>
+</a>
+
+<br><br>
+
+<a target="_blank" href="https://pograter.jbloves27.repl.co">
+  <div id="projectsleft">
+    <h3> PogRater </h3>
+    <img src="{{ url_for('static', filename='pograter.jpg') }}" width="50" height="50"/>
+    <br>
+    <p>
+      PogRater is a Flask website that rates
+      <br>
+      how <em>pog</em> a word is. This is currently
+      <br>
+      a bit biased as it doesn't use an API yet.
+      <br>
+      However, I'm planning on using an API soon!
+    </p>
+  </div>
+</a>
 {% endblock %}
