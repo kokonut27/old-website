@@ -8,6 +8,22 @@
     ],
     "routes": [
         {
+          "src": "/about",
+          "dest": "./templates/about.html"
+        },
+        {
+          "src": "/projects",
+          "dest": "./templates/projects.html"
+        },
+        {
+          "src": "/contact",
+          "dest": "./templates/contact.html"
+        },
+        {
+          "src": "/404",
+          "dest": "./templates/404.html"
+        },
+        {
             "src": "/",
             "dest": "./templates/index.html"
         }
