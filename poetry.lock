@@ -36,6 +36,14 @@ async = ["asgiref (>=3.2)"]
 dotenv = ["python-dotenv"]
 
 [[package]]
+name = "git-api"
+version = "1.7.5"
+description = "A GitHub API. Extracts data from GitHub into json style data."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
 name = "itsdangerous"
 version = "2.0.1"
 description = "Safely pass data to untrusted environments and back."
@@ -79,7 +87,7 @@ watchdog = ["watchdog"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "e6db7ee8938470656453ad35f8b7bd171354f97a1d6251af636ac56ee08f65bf"
+content-hash = "ded8dad8dfd8bfb2606242504b8b908ca3d7dfcf575acd06bf91d6aa17801cce"
 
 [metadata.files]
 click = [
@@ -93,6 +101,10 @@ colorama = [
 flask = [
     {file = "Flask-2.0.2-py3-none-any.whl", hash = "sha256:cb90f62f1d8e4dc4621f52106613488b5ba826b2e1e10a33eac92f723093ab6a"},
     {file = "Flask-2.0.2.tar.gz", hash = "sha256:7b2fb8e934ddd50731893bdcdb00fc8c0315916f9fcd50d22c7cc1a95ab634e2"},
+]
+git-api = [
+    {file = "git_api-1.7.5-py3-none-any.whl", hash = "sha256:71a8c7e7b0a7ada2f2a6ad3bc69cb5713f156f6681b58b39b666d4b72b7d273c"},
+    {file = "git_api-1.7.5.tar.gz", hash = "sha256:57ec1c2a731480ccb3b2a570d4fc4bc6c43d21a716cba5d887804dd5871e8dd9"},
 ]
 itsdangerous = [
     {file = "itsdangerous-2.0.1-py3-none-any.whl", hash = "sha256:5174094b9637652bdb841a3029700391451bd092ba3db90600dea710ba28e97c"},
